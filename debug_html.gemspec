@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'debug_html'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2016-09-01'
   s.summary     = 'Drop-in HTML page save and open.'
-  s.description = 'Drop-in HTML page save and open like Capybara\'s save_and_open_page'
+  s.description = "Drop-in HTML page save and open like capybara's save_and_open_page."
   s.authors     = ['Melvin Lammerts']
   s.email       = 'hi@melvin.sh'
   s.files       = Dir['lib/**/*.rb']
