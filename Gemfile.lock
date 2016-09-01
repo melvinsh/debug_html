@@ -1,0 +1,36 @@
+PATH
+  remote: .
+  specs:
+    debug_html (0.0.1)
+      launchy (~> 2.4, >= 2.4.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.4.0)
+    diff-lcs (1.2.5)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.2)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  debug_html!
+  rspec (~> 3.5)
+
+BUNDLED WITH
+   1.12.5
