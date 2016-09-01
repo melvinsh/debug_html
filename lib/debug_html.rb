@@ -11,7 +11,7 @@ module DebugHTML
     Launchy.open(path)
   end
 
-  private_class_method def self.save_html(html)
+  def self.save_html(html)
     file = File.new(full_path, 'w')
     file.write(html)
     file.close
@@ -19,13 +19,17 @@ module DebugHTML
     file.path
   end
 
-  private_class_method def self.full_path
+  def self.full_path
     tmpdir = Dir.tmpdir
     "#{tmpdir}/#{filename}"
   end
 
-  private_class_method def self.filename
+  def self.filename
     timestamp = Time.new.strftime('%Y%m%d%H%M%S')
     "debug_html-#{timestamp}#{rand(10**10)}.html"
   end
+
+  private_class_method :save_html
+  private_class_method :full_path
+  private_class_method :filename
 end
